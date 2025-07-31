@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital e Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Segurança Digital e Matemática</h1>
+            <p>Como a matemática garante a nossa segurança online</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>O que é Criptografia?</h2>
+                <p>
+                    A criptografia é um conjunto de técnicas matemáticas utilizadas para proteger dados. Ela transforma informações legíveis (como textos e senhas) em dados incompreensíveis para garantir sua segurança durante a transmissão.
+                </p>
+                <p>
+                    A matemática é essencial nesse processo, criando algoritmos que tornam quase impossível decifrar uma mensagem sem a chave correta.
+                </p>
+            </section>
+
+            <section class="example">
+                <h2>Exemplo de Criptografia Simples</h2>
+                <p>Vamos ver como funciona um algoritmo simples de criptografia chamado "Cifra de César".</p>
+
+                <div class="crypto-example">
+                    <div class="input-section">
+                        <label for="input-text">Texto:</label>
+                        <input type="text" id="input-text" placeholder="Digite até 30 letras (A-Z)" maxlength="30">
+                    </div>
+                    <div class="key-section">
+                        <label for="key">Chave de Deslocamento:</label>
+                        <input type="number" id="key" value="3" min="1" max="25">
+                    </div>
+                    <button onclick="criptografar()">Criptografar</button>
+                    <div class="output">
+                        <p><strong>Texto Cifrado:</strong> <span id="encrypted-text">-</span></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Segurança Digital e Matemática. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
